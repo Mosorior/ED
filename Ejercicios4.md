@@ -4,9 +4,46 @@
 ### bash
     #!/bin/bash
 
-    echo "Hola Mundo"
+    echo "Hello World"
 
     exit 0
-    
+
+
+### python
+
+    print("Hello World")
 
 ### php
+
+    <?php
+    echo "Hello World";
+    ?>
+
+### javascript
+
+    <script>
+        alert('Hello World');
+    </script>
+
+### c
+
+    #include <stdio.h>
+    int main(){
+        printf("Hello World");
+        return 0;
+    }
+
+### c++
+
+    #include <iostream>
+    int main(){
+        cout<<"Hello World";
+        return 0;
+    }
+
+### java
+### ruby
+### go
+### rust
+### lisp
+### ensamblador (nasm)
