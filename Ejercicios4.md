@@ -132,19 +132,19 @@ Compilación:
 - go: compilado
 - rust: compilado
 - lisp: interpretado
-- ensamblador (nasm): compilado
 
 ## 3. Para cada uno de los lenguajes anteriores, indica el nombre del compilador o interprete utilizado en GNU/Linux.
 
-- bash: interpretado
-- python: interpretado
-- php: interpretado
-- javascript (nodejs): interpretado
-- c: compilado
-- c++: compilado
-- java: compilado
-- ruby: interpretado
-- go: compilado
-- rust: compilado
-- lisp: interpretado
-- ensamblador (nasm): compilado
+- bash: Terminal/Consola
+- python: python IDE
+- php: php
+- javascript (nodejs): java
+- c: gcc
+- c++: gcc
+- java: jdk
+- ruby: yarv
+- go: go
+- rust: rustc
+- lisp: lisp
+
+## 4. 
