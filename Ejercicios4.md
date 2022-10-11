@@ -51,7 +51,7 @@
 
 ### ruby
 
-File: hello_world.ruby
+Archivo: hello_world.ruby
     puts "Hello World"
 
 ### go
@@ -86,12 +86,10 @@ Terminal
 
 Código fuente:
 
-    ; Define variables in the data section
 SECTION .DATA
 	hello:     db 'Hello world!',10
 	helloLen:  equ $-hello
 
-; Code goes in the text section
 SECTION .TEXT
 	GLOBAL _start 
 
@@ -102,7 +100,6 @@ _start:
 	mov edx,helloLen     ; length of string to write
 	int 80h              ; call the kernel
 
-	; Terminate program
 	mov eax,1            ; 'exit' system call
 	mov ebx,0            ; exit with error code 0
 	int 80h              ; call the kernel
@@ -147,4 +144,38 @@ Compilación:
 - rust: rustc
 - lisp: lisp
 
-## 4. 
+## 4. Investiga y averigua que extensión tienen los archivos de código fuente de los siguientes lenguajes:
+
+- bash: .sh
+- python: .py
+- php: .php
+- javascript: .js
+- c: .c
+- c++: .C
+- java: .java
+- ensamblador: .ASM
+- ruby: .ruby
+- go: .GO
+- rust: .rs
+- lisp: .lsp
+
+## 5. Scripts ejecutables para los lenguajes interpretados. Edita los scripts para los siguientes lenguajes:
+
+- bash: 
+- python: 
+- php: 
+- javascript: 
+- java: 
+- ruby: 
+- go: 
+- rust: 
+- lisp: 
+
+Ya está hecho en Ej 1
+
+## 6. ¿Qué extensión tienen los archivos de código objeto?
+.obj
+
+## 7. Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
+
+[Link](https://github.com/Mosorior/ED/tree/main/images/Ej04/Ej7.png)
