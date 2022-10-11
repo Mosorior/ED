@@ -178,4 +178,23 @@ Ya está hecho en Ej 1
 
 ## 7. Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
 
-[Link](https://github.com/Mosorior/ED/tree/main/images/Ej04/Ej7.png)
+[Link](https://github.com/Mosorior/ED/blob/main/images/Ej7.png)
+
+## 8. Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
+
+[Link](https://github.com/Mosorior/ED/blob/main/images/Ej8.png)
+
+## 9. Lenguaje C++. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
+[Link](https://github.com/Mosorior/ED/blob/main/images/Ej9.png)
+
+## 10. Lenguaje C++. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
+[Link](https://github.com/Mosorior/ED/blob/main/images/Ej10.png)
+
+## 11. Bibliotecas. Define que se entiende por biblioteca o librería y los tipos que existen.
+Son un conjunto de archivos que se utiliza para desarrollar software. Su fin es ser utilizada por otros programas de forma autónoma.
+
+## 12. Bibliotecas. ¿Qué tipo es el más utilizado actualmente? ¿Por qué?
+Las bibliotecas dinámicas porque son menos pesadas y el programa se beneficia de sus actualizaciones.
+
+## 13. Bibliotecas. Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
+
