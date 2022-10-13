@@ -2,90 +2,117 @@
 
 ## 1. Ejecuta el programa "Hola mundo" en los siguientes lenguajes:
 ### bash
-    #!/bin/bash
-    
-    echo "Hello World"
-    
-    exit 0
+```bash
+#!/bin/bash
+
+echo "Hello World"
+
+exit 0
+```
 
 
 ### python
 
-    print("Hello World")
+```python
+print("Hello World")
+```
 
 ### php
 
-    <?php
-    echo "Hello World";
-    ?>
+```php
+<?php
+echo "Hello World";
+?>
+```
 
 ### javascript
 
-    <script>
-        alert('Hello World');
-    </script>
+```javascript
+<script>
+    alert('Hello World');
+</script>
+```
 
 ### c
 
-    #include <stdio.h>
-    int main(){
-        printf("Hello World");
-        return 0;
-    }
+```c
+#include <stdio.h>
+int main(){
+    printf("Hello World");
+    return 0;
+}
+```
 
 ### c++
 
-    #include <iostream>
-    int main(){
-        cout<<"Hello World";
-        return 0;
-    }
+```c++
+#include <iostream>
+int main(){
+    cout<<"Hello World";
+    return 0;
+}
+```
 
 ### java
 
-    class HelloWorld {
-        public static void main(string[] args){
-            System.out.println("Hello World");
-        }
+```java
+class HelloWorld {
+    public static void main(string[] args){
+        System.out.println("Hello World");
     }
+}
+```
 
 ### ruby
 
+```ruby
 Archivo: hello_world.ruby
     puts "Hello World"
+```
+
+
 
 ### go
 
-    package main
-    
-    import "fmt"
-    func main(){
-        fmt.println("Hello World")
-    }
+```go
+package main
+
+import "fmt"
+func main(){
+    fmt.println("Hello World")
+}
+```
 
 Terminal
 
-    $ go run hello-world.go
-    
-    $ go build hello-world.go
-    $ ls
-    
-    $ ./hello-world
+```bash
+$ go run hello-world.go
+
+$ go build hello-world.go
+$ ls
+
+$ ./hello-world
+```
 
 ### rust
 
-    fn main(){
-        println!("Hello World);
-    }
+```rust
+fn main(){
+    println!("Hello World);
+}
+```
 
 ### lisp
 
-    (format t "Hello, World!")
+```lisp
+(format t "Hello, World!")
+```
 
 ### ensamblador (nasm)
 
 Código fuente:
 
+```
 SECTION .DATA
 	hello:     db 'Hello world!',10
 	helloLen:  equ $-hello
@@ -100,9 +127,12 @@ _start:
 	mov edx,helloLen     ; length of string to write
 	int 80h              ; call the kernel
 
-	mov eax,1            ; 'exit' system call
-	mov ebx,0            ; exit with error code 0
-	int 80h              ; call the kernel
+
+
+mov eax,1            ; 'exit' system call
+mov ebx,0            ; exit with error code 0
+int 80h              ; call the kernel
+```
 
 Compilación:
 
@@ -178,17 +208,17 @@ Ya está hecho en Ej 1
 
 ## 7. Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
 
-[Screenshot](https://github.com/Mosorior/ED/blob/main/images/Ej7.png?raw=true)
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej7.png)
 
 ## 8. Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
 
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej7.png?raw=true)
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej7.png)
 
 ## 9. Lenguaje C++. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej9.png)
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej9.png)
 
 ## 10. Lenguaje C++. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej10.png)
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej10.png)
 
 ## 11. Bibliotecas. Define que se entiende por biblioteca o librería y los tipos que existen.
 Son un conjunto de archivos que se utiliza para desarrollar software. Su fin es ser utilizada por otros programas de forma autónoma.
@@ -200,30 +230,33 @@ Las bibliotecas dinámicas porque son menos pesadas y el programa se beneficia d
 
 Creamos el archivo aritmetica.c con el siguiente código:
 
-`#include <stdio.h>`
-`#include <stdlib.h>`
-`int suma (int a, int b){`
-    `return a+b;`
-`}`
-`int resta (int a, int b){`
-   `return a-b;`
-`}`
-`int multiplicar (int a, int b){`
-   `return a*b;`
-`}`
-`int dividir (int a, int b){`
-   `return a/b;`
-`}`
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int suma (int a, int b){
+    return a+b;
+}
+int resta (int a, int b){
+   return a-b;
+}
+int multiplicar (int a, int b){
+   return a*b;
+}
+int dividir (int a, int b){
+   return a/b;
+}
+```
 
 Convertimos a libreria:
 
-[Link](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej13.png)
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej13.png)
 
 ## 14. Bibliotecas. Crea una biblioteca dinámica en Java que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
 
 Creamos el archivo aritmetica.java con el siguiente código:
 
-`public class aritmetica{
+```java
+public class aritmetica{
 
 ​    public int suma(int a, int b){
 
@@ -249,11 +282,12 @@ Creamos el archivo aritmetica.java con el siguiente código:
 
 ​    }
 
-}`
+}
+```
 
 Convertimos a librería:
 
-[Link](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej14.png)
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej14.png)
 
 
 
