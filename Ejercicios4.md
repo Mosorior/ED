@@ -3,9 +3,9 @@
 ## 1. Ejecuta el programa "Hola mundo" en los siguientes lenguajes:
 ### bash
     #!/bin/bash
-
+    
     echo "Hello World"
-
+    
     exit 0
 
 
@@ -57,7 +57,7 @@ Archivo: hello_world.ruby
 ### go
 
     package main
-
+    
     import "fmt"
     func main(){
         fmt.println("Hello World")
@@ -66,10 +66,10 @@ Archivo: hello_world.ruby
 Terminal
 
     $ go run hello-world.go
-
+    
     $ go build hello-world.go
     $ ls
-
+    
     $ ./hello-world
 
 ### rust
@@ -108,10 +108,10 @@ Compilación:
 
     #Compilación
     nasm -f elf64 hola.asm -o hola.o
-
+    
     #Enlace
     ld hola.o -o hola
-
+    
     #Ejecución
     ./hola
 
@@ -198,3 +198,63 @@ Las bibliotecas dinámicas porque son menos pesadas y el programa se beneficia d
 
 ## 13. Bibliotecas. Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
 
+Creamos el archivo aritmetica.c con el siguiente código:
+
+`#include <stdio.h>`
+`#include <stdlib.h>`
+`int suma (int a, int b){`
+    `return a+b;`
+`}`
+`int resta (int a, int b){`
+   `return a-b;`
+`}`
+`int multiplicar (int a, int b){`
+   `return a*b;`
+`}`
+`int dividir (int a, int b){`
+   `return a/b;`
+`}`
+
+Convertimos a libreria:
+
+[Link](https://github.com/Mosorior/ED/blob/main/images/Ej13.png)
+
+## 14. Bibliotecas. Crea una biblioteca dinámica en Java que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
+
+Creamos el archivo aritmetica.java con el siguiente código:
+
+`public class aritmetica{
+
+​    public int suma(int a, int b){
+
+​        return a+b;
+
+​    }
+
+​    public int resta(int a, int b){
+
+​        return a-b;
+
+​    }
+
+​    public int multiplicar(int a, int b){
+
+​        return a*b;
+
+​    }
+
+​    public int dividir(int a, int b){
+
+​        return a/b;
+
+​    }
+
+}`
+
+Convertimos a librería:
+
+[Link](https://github.com/Mosorior/ED/blob/main/images/Ej13.png)
+
+
+
+## 15. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas estáticas.
