@@ -178,11 +178,11 @@ Ya está hecho en Ej 1
 
 ## 7. Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
 
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej7.png)
+[Screenshot](https://github.com/Mosorior/ED/blob/main/images/Ej7.png)
 
 ## 8. Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
 
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej8.png)
+[Screenshot](https://github.com/Mosorior/ED/blob/main/images/Ej8.png)
 
 ## 9. Lenguaje C++. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:
 [Link](https://github.com/Mosorior/ED/blob/main/images/Ej9.png)
