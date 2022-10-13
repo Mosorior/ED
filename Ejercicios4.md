@@ -217,7 +217,7 @@ Creamos el archivo aritmetica.c con el siguiente código:
 
 Convertimos a libreria:
 
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej13.png)
+[Link](images/Ej13.png)
 
 ## 14. Bibliotecas. Crea una biblioteca dinámica en Java que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.
 
@@ -253,7 +253,7 @@ Creamos el archivo aritmetica.java con el siguiente código:
 
 Convertimos a librería:
 
-[Link](https://github.com/Mosorior/ED/blob/main/images/Ej13.png)
+[Link](https://github.com/Mosorior/ED/blob/f6a4bcb5373b0377abc8969bd8d6cd4b44b12c9c/images/Ej14.png)
 
 
 
