@@ -292,3 +292,41 @@ Convertimos a librería:
 
 
 ## 15. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas estáticas.
+
+Las bibliotecas estáticas dan la seguridad de que todas las dependencias están en la aplicación y con su versión correcta. Esto evita problemas de dependencia. También permite que la aplicación se contenga dentro de un solo archivo ejecutable, simplificando la distribución y la instalación.
+
+Las estáticas son más eficientes que las dinámicas, pues solo se cargan las bibliotecas necesarias y no todas.
+
+Algunas desventajas de las estáticas es que al almacenarse dentro del ejecutable, este se vuelve más pesado.
+
+
+
+## 16. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas dinámicas.
+
+Ahorra más memoria, el archivo so es independiente del archivo EXE, es adecuado para el desarrollo de software a gran escala, lo que hace que el proceso sea independiente y menos acoplado.
+
+El archivo ejecutable generado es de gran tamaño y contiene el mismo código común.
+
+## 17. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo ejecutable para código fuente en C con make. Haz uso de un buildfile.
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej17.1.png)
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej17.2.png)
+
+## 19. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Maven. Haz uso de un buildfile.
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.1.png)
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.2.png)
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.3.png)
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.4.png)
+
+
+
+## 20. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Gradle. Haz uso de un buildfile.
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej20.png)
+
+![Cat](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej20.1.png)
