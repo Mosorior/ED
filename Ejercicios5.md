@@ -20,3 +20,15 @@
 
 
 
+### 3. ¿Para que sirve el complemento **Emmet**? Haz uso de él al escribir un archivo html de prueba.
+
+El complemento Emmet sirve para escribir expresiones abreviadas en html que después se expanden en un código html normal, por ejemplo:
+
+![Cat](https://github.com/Mosorior/ED/blob/main/images/Ej05/Ej03.1.png)
+
+Al escribir `ul#nav>li.item$*4>a{Item $}` queremos que se abra una lista con id nav y que esta lista tenga 4 elementos con el nombre "Item" y posteriormente el número que corresponda. Al expandirlo, queda así el programa:
+
+![Cat](https://github.com/Mosorior/ED/blob/main/images/Ej05/Ej03.2.png)
+
+
+
