@@ -30,3 +30,16 @@ Preparado (staged)
 
 Para ver todos los comandos. 
 
+## 6) En Git, ¿para qué sirve el comando `git init`?
+
+Para iniciar un repositorio.
+
+## 7) En Git, ¿para qué sirve el comando `git clone`?
+
+Para clonar un repositorio de la nube al pc.
+
+## 8) En Git, ¿para qué sirve el comando `git status`?
+
+Para saber si el repositorio remoto y el local están actualizados.
+
+## 9) En Git, ¿para qué sirve el comando `git add`?
