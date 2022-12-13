@@ -1,0 +1,11 @@
+site_name: Entornos de desarrollo
+site_url: https://mosorior.github.io
+nav:
+    - Home: index.md
+    - Ejercicios 1: Ejercicios1.md
+    - Ejercicios 2: Ejercicios2.md
+    - Ejercicios 3: Ejercicios3.md
+    - Herramientas de desarrollo: Ejercicios4 (Herramientas desarrollo).md 
+    - Entornos de desarrollo integrado: Ejercicios5 (Entornos desarrollo integrado).md
+    - Control de versiones: Ejercicios6 (Control de versiones).md
+theme: readthedocs
