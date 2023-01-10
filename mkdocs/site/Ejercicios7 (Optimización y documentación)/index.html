@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://mosorior.github.io/Ejercicios7%20%28Optimizaci%C3%B3n%20y%20documentaci%C3%B3n%29/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Optimización - Entornos de desarrollo</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Optimizaci\u00f3n";
+        var mkdocs_page_input_path = "Ejercicios7 (Optimizaci\u00f3n y documentaci\u00f3n).md";
+        var mkdocs_page_url = "/Ejercicios7%20%28Optimizaci%C3%B3n%20y%20documentaci%C3%B3n%29/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Entornos de desarrollo
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios1/">Ejercicios 1</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios2/">Ejercicios 2</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios3/">Ejercicios 3</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios4%20%28Herramientas%20desarrollo%29/">Herramientas de desarrollo</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios5%20%28Entornos%20desarrollo%20integrado%29/">Entornos de desarrollo integrado</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios6%20%28Control%20de%20versiones%29/">Control de versiones</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Optimización</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-que-se-entiende-por-hediondez-del-codigo">1. ¿Qué se entiende por hediondez del código?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-que-tipo-de-herramienta-utilizamos-para-hacer-analisis-estatico-del-codigo">2. ¿Qué tipo de herramienta utilizamos para hacer análisis estático del código?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-que-sitios-web-nos-permiten-hacer-analisis-estatico-del-codigo-o-continuous-inspection">3. ¿Qué sitios web nos permiten hacer análisis estático del código o Continuous Inspection?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-instala-en-netbeans-el-plugin-findbugs-si-no-lo-tienes-aun-instalado">4. Instala en Netbeans el plugin FindBugs, si no lo tienes aún instalado.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-realiza-analisis-estatico-de-codigo-para-las-clases-del-proyecto-miapp-consulta-el-siguiente-enlace-analisis-estatico-con-findbugs">5. Realiza análisis estático de código para las clases del proyecto miapp. Consulta el siguiente enlace: análisis estático con FindBugs.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-indica-al-menos-un-code-smell-relevante-de-cada-clase-explica-como-podria-solucionarse">6. Indica al menos un code smell relevante de cada clase. Explica cómo podría solucionarse.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-que-es-la-refactorizacion">7. ¿Qué es la refactorización?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-que-tecnicas-se-utilizan-a-menudo-a-la-hora-de-refactorizar">8. ¿Qué técnicas se utilizan a menudo a la hora de refactorizar?</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Entornos de desarrollo</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Optimización</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="tema-7-optimizacion-ejercicios">Tema 7 - Optimización (Ejercicios)</h1>
+<h2 id="1-que-se-entiende-por-hediondez-del-codigo">1. ¿Qué se entiende por hediondez del código?</h2>
+<p>Es un código que a pesar de no funcionar mal, puede provocar errores en un futuro además de realentizar el programa.</p>
+<h2 id="2-que-tipo-de-herramienta-utilizamos-para-hacer-analisis-estatico-del-codigo">2. ¿Qué tipo de herramienta utilizamos para hacer análisis estático del código?</h2>
+<p>Se usan linters.</p>
+<h2 id="3-que-sitios-web-nos-permiten-hacer-analisis-estatico-del-codigo-o-continuous-inspection">3. ¿Qué sitios web nos permiten hacer análisis estático del código o <strong>Continuous Inspection</strong>?</h2>
+<p>Scrutinizer o SonarQube.</p>
+<h2 id="4-instala-en-netbeans-el-plugin-findbugs-si-no-lo-tienes-aun-instalado">4. Instala en Netbeans el plugin <strong>FindBugs</strong>, si no lo tienes aún instalado.</h2>
+<p><img alt="No se usa ya" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ejercicios7/Ej04-05.png" /></p>
+<h2 id="5-realiza-analisis-estatico-de-codigo-para-las-clases-del-proyecto-miapp-consulta-el-siguiente-enlace-analisis-estatico-con-findbugs">5. Realiza <strong>análisis estático de código</strong> para las clases del proyecto <em>miapp</em>. Consulta el siguiente enlace: <a href="https://github.com/jamj2000/DAW1-ED-Pruebas-Ejemplo1#análisis-estático-de-código-con-findbugs-en-netbeans">análisis estático con FindBugs</a>.</h2>
+<p><img alt="No se usa ya" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ejercicios7/Ej04-05.png" /></p>
+<h2 id="6-indica-al-menos-un-code-smell-relevante-de-cada-clase-explica-como-podria-solucionarse">6. Indica al menos un <code>code smell</code> relevante de cada clase. Explica cómo podría solucionarse.</h2>
+<p>Long Method (Bloater): Se puede usar el refactor Extract Method. Si interfieren parámetros y variables locales, podemos emplear otros refactors para usar objetos de parámetros y reemplazar variables temporales con métodos.</p>
+<p>Refused bequest (Object-Orientation Abusers): Si la herencia no tiene sentido alguno, se debe reemplazar con delegación al objeto. Si tiene sentido, hay que extraer una superclase para obtener las variables y el comportamiento que necesitemos. Bequest se refiere a que la subclase rechaza el comportamiento de la clase padre que no necesita.</p>
+<p>Shotgun Surgery (Change Preventers): Mover todo el comportamiento similar a una clase sola, así cada una tendrá su propia responsabilidad. Recordar el principio de <em>single responsibility</em>. Si no existe una clase apropiada a donde mover el comportamiento, crearla.</p>
+<h2 id="7-que-es-la-refactorizacion">7. ¿Qué es la refactorización?</h2>
+<p>Es el proceso de reestructurar un código fuente, alterando su estructura interna sin cambiar su comportamiento externo.</p>
+<h2 id="8-que-tecnicas-se-utilizan-a-menudo-a-la-hora-de-refactorizar">8. ¿Qué técnicas se utilizan a menudo a la hora de refactorizar?</h2>
+<ul>
+<li>Renombrado de variables</li>
+<li>Pasar código duplicado a funciones</li>
+<li>Eliminación de código inalcanzable</li>
+<li>Eliminación de código redundante</li>
+<li>Eliminación de código muerto</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Ejercicios6%20%28Control%20de%20versiones%29/" class="btn btn-neutral float-left" title="Control de versiones"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ejercicios6%20%28Control%20de%20versiones%29/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

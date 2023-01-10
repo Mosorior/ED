@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://mosorior.github.io/Ejercicios4%20%28Herramientas%20desarrollo%29/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Herramientas de desarrollo - Entornos de desarrollo</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Herramientas de desarrollo";
+        var mkdocs_page_input_path = "Ejercicios4 (Herramientas desarrollo).md";
+        var mkdocs_page_url = "/Ejercicios4%20%28Herramientas%20desarrollo%29/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Entornos de desarrollo
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios1/">Ejercicios 1</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios2/">Ejercicios 2</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios3/">Ejercicios 3</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Herramientas de desarrollo</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-ejecuta-el-programa-hola-mundo-en-los-siguientes-lenguajes">1. Ejecuta el programa "Hola mundo" en los siguientes lenguajes:</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bash">bash</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#python">python</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#php">php</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#javascript">javascript</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#c">c</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#c_1">c++</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#java">java</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ruby">ruby</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#go">go</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rust">rust</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lisp">lisp</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ensamblador-nasm">ensamblador (nasm)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-para-cada-uno-de-los-lenguajes-anteriores-indica-el-proceso-realizado-para-conseguir-ejecutar-el-codigo-compilacion-o-interpretacion">2. Para cada uno de los lenguajes anteriores, indica el proceso realizado para conseguir ejecutar el código: ¿compilación o interpretación?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-para-cada-uno-de-los-lenguajes-anteriores-indica-el-nombre-del-compilador-o-interprete-utilizado-en-gnulinux">3. Para cada uno de los lenguajes anteriores, indica el nombre del compilador o interprete utilizado en GNU/Linux.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-investiga-y-averigua-que-extension-tienen-los-archivos-de-codigo-fuente-de-los-siguientes-lenguajes">4. Investiga y averigua que extensión tienen los archivos de código fuente de los siguientes lenguajes:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-scripts-ejecutables-para-los-lenguajes-interpretados-edita-los-scripts-para-los-siguientes-lenguajes">5. Scripts ejecutables para los lenguajes interpretados. Edita los scripts para los siguientes lenguajes:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-que-extension-tienen-los-archivos-de-codigo-objeto">6. ¿Qué extensión tienen los archivos de código objeto?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-objeto-a-partir-del-codigo-fuente-de-los-3-archivos-siguientes">7. Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-binario-ejecutable-a-partir-del-codigo-objeto-de-los-3-archivos-anteriores">8. Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-objeto-a-partir-del-codigo-fuente-de-los-3-archivos-siguientes">9. Lenguaje C++. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-binario-ejecutable-a-partir-del-codigo-objeto-de-los-3-archivos-anteriores">10. Lenguaje C++. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-bibliotecas-define-que-se-entiende-por-biblioteca-o-libreria-y-los-tipos-que-existen">11. Bibliotecas. Define que se entiende por biblioteca o librería y los tipos que existen.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-bibliotecas-que-tipo-es-el-mas-utilizado-actualmente-por-que">12. Bibliotecas. ¿Qué tipo es el más utilizado actualmente? ¿Por qué?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-bibliotecas-crea-una-biblioteca-dinamica-en-c-que-proporcione-las-funciones-para-sumar-restar-multiplicar-y-dividir-2-numeros-enteros-crea-un-programa-que-haga-uso-de-ella-y-comprueba-que-se-ejecuta-correctamente">13. Bibliotecas. Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#14-bibliotecas-crea-una-biblioteca-dinamica-en-java-que-proporcione-las-funciones-para-sumar-restar-multiplicar-y-dividir-2-numeros-enteros-crea-un-programa-que-haga-uso-de-ella-y-comprueba-que-se-ejecuta-correctamente">14. Bibliotecas. Crea una biblioteca dinámica en Java que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#15-bibliotecas-busca-informacion-y-explica-las-ventajas-y-desventajas-de-usar-bibliotecas-estaticas">15. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas estáticas.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#16-bibliotecas-busca-informacion-y-explica-las-ventajas-y-desventajas-de-usar-bibliotecas-dinamicas">16. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas dinámicas.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#17-build-automatiza-el-proceso-de-compilacion-de-ejecutable-y-biblioteca-su-enlazado-y-la-generacion-del-archivo-ejecutable-para-codigo-fuente-en-c-con-make-haz-uso-de-un-buildfile">17. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo ejecutable para código fuente en C con make. Haz uso de un buildfile.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#19-build-automatiza-el-proceso-de-compilacion-de-ejecutable-y-biblioteca-su-enlazado-y-la-generacion-del-archivo-jar-para-codigo-fuente-en-java-con-maven-haz-uso-de-un-buildfile">19. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Maven. Haz uso de un buildfile.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#20-build-automatiza-el-proceso-de-compilacion-de-ejecutable-y-biblioteca-su-enlazado-y-la-generacion-del-archivo-jar-para-codigo-fuente-en-java-con-gradle-haz-uso-de-un-buildfile">20. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Gradle. Haz uso de un buildfile.</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios5%20%28Entornos%20desarrollo%20integrado%29/">Entornos de desarrollo integrado</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios6%20%28Control%20de%20versiones%29/">Control de versiones</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ejercicios7%20%28Optimizaci%C3%B3n%20y%20documentaci%C3%B3n%29/">Optimización</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Entornos de desarrollo</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Herramientas de desarrollo</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ejercicios-4">EJERCICIOS 4</h1>
+<h2 id="1-ejecuta-el-programa-hola-mundo-en-los-siguientes-lenguajes">1. Ejecuta el programa "Hola mundo" en los siguientes lenguajes:</h2>
+<h3 id="bash">bash</h3>
+<pre><code class="language-bash">#!/bin/bash
+
+echo &quot;Hello World&quot;
+
+exit 0
+</code></pre>
+<h3 id="python">python</h3>
+<pre><code class="language-python">print(&quot;Hello World&quot;)
+</code></pre>
+<h3 id="php">php</h3>
+<pre><code class="language-php">&lt;?php
+echo &quot;Hello World&quot;;
+?&gt;
+</code></pre>
+<h3 id="javascript">javascript</h3>
+<pre><code class="language-javascript">&lt;script&gt;
+    alert('Hello World');
+&lt;/script&gt;
+</code></pre>
+<h3 id="c">c</h3>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main(){
+    printf(&quot;Hello World&quot;);
+    return 0;
+}
+</code></pre>
+<h3 id="c_1">c++</h3>
+<pre><code class="language-c++">#include &lt;iostream&gt;
+int main(){
+    cout&lt;&lt;&quot;Hello World&quot;;
+    return 0;
+}
+</code></pre>
+<h3 id="java">java</h3>
+<pre><code class="language-java">class HelloWorld {
+    public static void main(string[] args){
+        System.out.println(&quot;Hello World&quot;);
+    }
+}
+</code></pre>
+<h3 id="ruby">ruby</h3>
+<pre><code class="language-ruby">Archivo: hello_world.ruby
+    puts &quot;Hello World&quot;
+</code></pre>
+<h3 id="go">go</h3>
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+func main(){
+    fmt.println(&quot;Hello World&quot;)
+}
+</code></pre>
+<p>Terminal</p>
+<pre><code class="language-bash">$ go run hello-world.go
+
+$ go build hello-world.go
+$ ls
+
+$ ./hello-world
+</code></pre>
+<h3 id="rust">rust</h3>
+<pre><code class="language-rust">fn main(){
+    println!(&quot;Hello World);
+}
+</code></pre>
+<h3 id="lisp">lisp</h3>
+<pre><code class="language-lisp">(format t &quot;Hello, World!&quot;)
+</code></pre>
+<h3 id="ensamblador-nasm">ensamblador (nasm)</h3>
+<p>Código fuente:</p>
+<pre><code>SECTION .DATA
+    hello:     db 'Hello world!',10
+    helloLen:  equ $-hello
+
+SECTION .TEXT
+    GLOBAL _start 
+
+_start:
+    mov eax,4            ; 'write' system call = 4
+    mov ebx,1            ; file descriptor 1 = STDOUT
+    mov ecx,hello        ; string to write
+    mov edx,helloLen     ; length of string to write
+    int 80h              ; call the kernel
+
+
+
+mov eax,1            ; 'exit' system call
+mov ebx,0            ; exit with error code 0
+int 80h              ; call the kernel
+</code></pre>
+<p>Compilación:</p>
+<pre><code>#Compilación
+nasm -f elf64 hola.asm -o hola.o
+
+#Enlace
+ld hola.o -o hola
+
+#Ejecución
+./hola
+</code></pre>
+<h2 id="2-para-cada-uno-de-los-lenguajes-anteriores-indica-el-proceso-realizado-para-conseguir-ejecutar-el-codigo-compilacion-o-interpretacion">2. Para cada uno de los lenguajes anteriores, indica el proceso realizado para conseguir ejecutar el código: ¿compilación o interpretación?</h2>
+<ul>
+<li>bash: interpretado</li>
+<li>python: interpretado</li>
+<li>php: interpretado</li>
+<li>javascript (nodejs): interpretado</li>
+<li>c: compilado</li>
+<li>c++: compilado</li>
+<li>java: compilado</li>
+<li>ruby: interpretado</li>
+<li>go: compilado</li>
+<li>rust: compilado</li>
+<li>lisp: interpretado</li>
+</ul>
+<h2 id="3-para-cada-uno-de-los-lenguajes-anteriores-indica-el-nombre-del-compilador-o-interprete-utilizado-en-gnulinux">3. Para cada uno de los lenguajes anteriores, indica el nombre del compilador o interprete utilizado en GNU/Linux.</h2>
+<ul>
+<li>bash: Terminal/Consola</li>
+<li>python: python IDE</li>
+<li>php: php</li>
+<li>javascript (nodejs): java</li>
+<li>c: gcc</li>
+<li>c++: gcc</li>
+<li>java: jdk</li>
+<li>ruby: yarv</li>
+<li>go: go</li>
+<li>rust: rustc</li>
+<li>lisp: lisp</li>
+</ul>
+<h2 id="4-investiga-y-averigua-que-extension-tienen-los-archivos-de-codigo-fuente-de-los-siguientes-lenguajes">4. Investiga y averigua que extensión tienen los archivos de código fuente de los siguientes lenguajes:</h2>
+<ul>
+<li>bash: .sh</li>
+<li>python: .py</li>
+<li>php: .php</li>
+<li>javascript: .js</li>
+<li>c: .c</li>
+<li>c++: .C</li>
+<li>java: .java</li>
+<li>ensamblador: .ASM</li>
+<li>ruby: .ruby</li>
+<li>go: .GO</li>
+<li>rust: .rs</li>
+<li>lisp: .lsp</li>
+</ul>
+<h2 id="5-scripts-ejecutables-para-los-lenguajes-interpretados-edita-los-scripts-para-los-siguientes-lenguajes">5. Scripts ejecutables para los lenguajes interpretados. Edita los scripts para los siguientes lenguajes:</h2>
+<ul>
+<li>bash: </li>
+<li>python: </li>
+<li>php: </li>
+<li>javascript: </li>
+<li>java: </li>
+<li>ruby: </li>
+<li>go: </li>
+<li>rust: </li>
+<li>lisp: </li>
+</ul>
+<p>Ya está hecho en Ej 1</p>
+<h2 id="6-que-extension-tienen-los-archivos-de-codigo-objeto">6. ¿Qué extensión tienen los archivos de código objeto?</h2>
+<p>.obj</p>
+<h2 id="7-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-objeto-a-partir-del-codigo-fuente-de-los-3-archivos-siguientes">7. Lenguaje C. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej7.png" /></p>
+<h2 id="8-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-binario-ejecutable-a-partir-del-codigo-objeto-de-los-3-archivos-anteriores">8. Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej7.png" /></p>
+<h2 id="9-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-objeto-a-partir-del-codigo-fuente-de-los-3-archivos-siguientes">9. Lenguaje C++. Código en varios archivos. Obtener el código objeto a partir del código fuente de los 3 archivos siguientes:</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej9.png" /></p>
+<h2 id="10-lenguaje-c-codigo-en-varios-archivos-obtener-el-codigo-binario-ejecutable-a-partir-del-codigo-objeto-de-los-3-archivos-anteriores">10. Lenguaje C++. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej10.png" /></p>
+<h2 id="11-bibliotecas-define-que-se-entiende-por-biblioteca-o-libreria-y-los-tipos-que-existen">11. Bibliotecas. Define que se entiende por biblioteca o librería y los tipos que existen.</h2>
+<p>Son un conjunto de archivos que se utiliza para desarrollar software. Su fin es ser utilizada por otros programas de forma autónoma.</p>
+<h2 id="12-bibliotecas-que-tipo-es-el-mas-utilizado-actualmente-por-que">12. Bibliotecas. ¿Qué tipo es el más utilizado actualmente? ¿Por qué?</h2>
+<p>Las bibliotecas dinámicas porque son menos pesadas y el programa se beneficia de sus actualizaciones.</p>
+<h2 id="13-bibliotecas-crea-una-biblioteca-dinamica-en-c-que-proporcione-las-funciones-para-sumar-restar-multiplicar-y-dividir-2-numeros-enteros-crea-un-programa-que-haga-uso-de-ella-y-comprueba-que-se-ejecuta-correctamente">13. Bibliotecas. Crea una biblioteca dinámica en C que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.</h2>
+<p>Creamos el archivo aritmetica.c con el siguiente código:</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+int suma (int a, int b){
+    return a+b;
+}
+int resta (int a, int b){
+   return a-b;
+}
+int multiplicar (int a, int b){
+   return a*b;
+}
+int dividir (int a, int b){
+   return a/b;
+}
+</code></pre>
+<p>Convertimos a libreria:</p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej13.png" /></p>
+<h2 id="14-bibliotecas-crea-una-biblioteca-dinamica-en-java-que-proporcione-las-funciones-para-sumar-restar-multiplicar-y-dividir-2-numeros-enteros-crea-un-programa-que-haga-uso-de-ella-y-comprueba-que-se-ejecuta-correctamente">14. Bibliotecas. Crea una biblioteca dinámica en Java que proporcione las funciones para sumar, restar, multiplicar y dividir 2 números enteros. Crea un programa que haga uso de ella y comprueba que se ejecuta correctamente.</h2>
+<p>Creamos el archivo aritmetica.java con el siguiente código:</p>
+<pre><code class="language-java">public class aritmetica{
+
+​    public int suma(int a, int b){
+
+​        return a+b;
+
+​    }
+
+​    public int resta(int a, int b){
+
+​        return a-b;
+
+​    }
+
+​    public int multiplicar(int a, int b){
+
+​        return a*b;
+
+​    }
+
+​    public int dividir(int a, int b){
+
+​        return a/b;
+
+​    }
+
+}
+</code></pre>
+<p>Convertimos a librería:</p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej14.png" /></p>
+<h2 id="15-bibliotecas-busca-informacion-y-explica-las-ventajas-y-desventajas-de-usar-bibliotecas-estaticas">15. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas estáticas.</h2>
+<p>Las bibliotecas estáticas dan la seguridad de que todas las dependencias están en la aplicación y con su versión correcta. Esto evita problemas de dependencia. También permite que la aplicación se contenga dentro de un solo archivo ejecutable, simplificando la distribución y la instalación.</p>
+<p>Las estáticas son más eficientes que las dinámicas, pues solo se cargan las bibliotecas necesarias y no todas.</p>
+<p>Algunas desventajas de las estáticas es que al almacenarse dentro del ejecutable, este se vuelve más pesado.</p>
+<h2 id="16-bibliotecas-busca-informacion-y-explica-las-ventajas-y-desventajas-de-usar-bibliotecas-dinamicas">16. Bibliotecas. Busca información y explica las ventajas y desventajas de usar bibliotecas dinámicas.</h2>
+<p>Ahorra más memoria, el archivo so es independiente del archivo EXE, es adecuado para el desarrollo de software a gran escala, lo que hace que el proceso sea independiente y menos acoplado.</p>
+<p>El archivo ejecutable generado es de gran tamaño y contiene el mismo código común.</p>
+<h2 id="17-build-automatiza-el-proceso-de-compilacion-de-ejecutable-y-biblioteca-su-enlazado-y-la-generacion-del-archivo-ejecutable-para-codigo-fuente-en-c-con-make-haz-uso-de-un-buildfile">17. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo ejecutable para código fuente en C con make. Haz uso de un buildfile.</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej17.1.png" /></p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej17.2.png" /></p>
+<h2 id="19-build-automatiza-el-proceso-de-compilacion-de-ejecutable-y-biblioteca-su-enlazado-y-la-generacion-del-archivo-jar-para-codigo-fuente-en-java-con-maven-haz-uso-de-un-buildfile">19. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Maven. Haz uso de un buildfile.</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.1.png" /></p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.2.png" /></p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.3.png" /></p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej19.4.png" /></p>
+<h2 id="20-build-automatiza-el-proceso-de-compilacion-de-ejecutable-y-biblioteca-su-enlazado-y-la-generacion-del-archivo-jar-para-codigo-fuente-en-java-con-gradle-haz-uso-de-un-buildfile">20. Build. Automatiza el proceso de compilación de ejecutable y biblioteca, su enlazado y la generación del archivo .jar para código fuente en Java con Gradle. Haz uso de un buildfile.</h2>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej20.png" /></p>
+<p><img alt="Cat" src="https://raw.githubusercontent.com/Mosorior/ED/main/images/Ej20.1.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Ejercicios3/" class="btn btn-neutral float-left" title="Ejercicios 3"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Ejercicios5%20%28Entornos%20desarrollo%20integrado%29/" class="btn btn-neutral float-right" title="Entornos de desarrollo integrado">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ejercicios3/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Ejercicios5%20%28Entornos%20desarrollo%20integrado%29/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
