@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aritmetica">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/aritmetica.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

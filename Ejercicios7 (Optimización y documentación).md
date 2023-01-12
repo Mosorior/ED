@@ -12,13 +12,15 @@ Se usan linters.
 
 Scrutinizer o SonarQube.
 
-## 4. Instala en Netbeans el plugin **FindBugs**, si no lo tienes aún instalado.
+## 4. Instala en IntelliJ el plugin **Spot**Bugs, si no lo tienes aún instalado.
 
-![No se usa ya](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ejercicios7/Ej04-05.png)
+![No se usa ya](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ejercicios7/Ej04
 
-## 5. Realiza **análisis estático de código** para las clases del proyecto *miapp*. Consulta el siguiente enlace: [análisis estático con FindBugs](https://github.com/jamj2000/DAW1-ED-Pruebas-Ejemplo1#análisis-estático-de-código-con-findbugs-en-netbeans).
+.png)
 
-![No se usa ya](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ejercicios7/Ej04-05.png)
+## 5. Realiza **análisis estático de código** para las clases del proyecto *miapp*. Consulta el siguiente enlace: [análisis estático con SpotBugs](https://github.com/jamj2000/DAW1-ED-Pruebas-Ejemplo1#análisis-estático-de-código-con-findbugs-en-netbeans).
+
+![No se usa ya](https://raw.githubusercontent.com/Mosorior/ED/main/images/Ejercicios7/Ej05.png)
 
 ## 6. Indica al menos un `code smell` relevante de cada clase. Explica cómo podría solucionarse.
 
