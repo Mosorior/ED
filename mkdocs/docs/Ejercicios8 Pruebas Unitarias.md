@@ -55,3 +55,11 @@ Las pruebas beta son un tipo de prueba de software que se realiza en la etapa fi
 **12. ¿Qué son las pruebas de aceptación?**
 
 Las pruebas de aceptación son un tipo de prueba de software que se lleva a cabo para verificar si el sistema cumple con los requisitos y expectativas del cliente o usuario final. Estas pruebas se realizan después de las pruebas funcionales y no funcionales, y son llevadas a cabo por el cliente o por representantes del cliente en un entorno similar al de producción. El objetivo principal de las pruebas de aceptación es validar que el software esté listo para su implementación y uso, y que cumpla con los criterios de aceptación previamente definidos.
+
+
+
+**13-16. Instalación y ejecución JUnit**
+
+![](https://raw.githubusercontent.com/Mosorior/ED/main/images/JUnitproject.png)
+
+En IntelliJ, JUnit viene instalado por defecto. La estructura es la requerida, como se muestra a la izquierda de la imagen y el código está implementado. Para finalizar, en la parte inferior se ve el resultado de la ejecución de las pruebas.
